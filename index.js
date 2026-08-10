@@ -21,6 +21,15 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]",
     );
   }
+  let abqComponent = document.querySelector("#albuquerque");
+  if (abqComponent) {
+    let abqDateComponent = abqComponent.querySelector(".date");
+    let abqTimeComponent = abqComponent.querySelector(".time");
+    abqTime = moment().tz("America/Denver");
+
+    abqDateComponent.innerHTML = abqTime.format("MMMM Do YYYY");
+    abqTimeComponent.innerHTML = abqTime.format("h:mm:ss [<small>]A[</small>]");
+  }
 }
 
 function updateCity(event) {
