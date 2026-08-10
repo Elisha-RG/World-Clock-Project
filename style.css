@@ -1,5 +1,6 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #ecfeff;
+  font-family: "Fjalla One", sans-serif;
 }
 
 .container {
@@ -48,6 +49,7 @@ select {
   font-size: 18px;
   border-radius: 4px;
   padding: 10px;
+  font-family: "Fjalla One", sans-serif;
 }
 
 h1 {

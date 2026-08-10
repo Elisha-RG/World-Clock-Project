@@ -1,43 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src= "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
-  <script src= "https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.2/moment-timezone-with-data-1970-2030.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.2/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>World Clock Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-    <h1>World Clock</h1>
+      <h1>🌐World Clock🕧</h1>
 
-<select >
-<option value="">Select a city</option>
-<option value="">Munich</option>
-<option value="">Seattle</option>
-<option value="">Albuquerque</option>
-</select>
+      <select id="city">
+        <option value="">Select a city</option>
+        <option value="current">My Current Location</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Europe/Rome">Rome</option>
+        <option value="America/Denver">Denver</option>
+      </select>
 
-<div class="city" id="munich">
-    <div>
-    <h2>Munich</h2>
-    <div class="date">August 7th, 2026</div>
+      <div id="cities">
+        <div class="city" id="munich">
+          <div>
+            <h2>Munich</h2>
+            <div class="date">August 7th, 2026</div>
+          </div>
+          <div class="time">10:45 <small>AM</small></div>
+        </div>
+
+        <div class="city" id="seattle">
+          <div>
+            <h2>Seattle</h2>
+            <div class="date">August 7th, 2026</div>
+          </div>
+          <div class="time">10:45 <small>AM</small></div>
+        </div>
+      </div>
     </div>
-    <div class="time">10:45 <small>AM</small></div>
-</div>
-
-<div class="city" id="seattle">
-    <div>
-    <h2>Seattle</h2>
-    <div class="date">August 7th, 2026</div>
-    </div>
-    <div class="time">10:45 <small>AM</small></div>
-</div>
-
-</div>
-    <footer>This project was coded by <strong>Elisha Geoffrion</strong> and is <a href="https://github.com/Elisha-RG/World-Clock-Project" target="_blank">open-sourced on GitHub</a>
+    <footer>
+      This project was coded by <strong>Elisha Geoffrion</strong> and is
+      <a href="https://github.com/Elisha-RG/World-Clock-Project" target="_blank"
+        >open-sourced on GitHub</a
+      >
     </footer>
+
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
